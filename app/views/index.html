@@ -1,6 +1,12 @@
 {% extends 'layouts/default.html' %}
 
 {% block content %}
+<section class='intro'>
 	<p>Hello world! This is MEAN Stack Boilerplate.</p>
-	<p><a href="/auth">Login &amp; Signup</a></p>
+	<p>Login with:</p>
+	<ul>
+		<li><a href="/auth/facebook"><span class="icon-facebook"></span>Facebook</a></li>
+		<li><a href="/auth/twitter"><span class="icon-twitter"></span>Twitter</a></li>
+	</ul>	
+</section>
 {% endblock %}

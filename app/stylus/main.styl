@@ -2,11 +2,22 @@
 
 @import 'fonts'
 @import 'colors'
+@import 'functions'
+
+// Reset headers
+h1,h2,h3,h4,h5,h6
+	_resetSpaces()
 
 // Mobile-First styles
 body
+	background bg_color
+	color f_color
 	font-family 'Open Sans'
-	background #eaeaea
+	font-size 16px
+
+header
+	background bg_header
+	color f_header
 
 @import 'responsive-tablet'
 @import 'responsive-desktop'

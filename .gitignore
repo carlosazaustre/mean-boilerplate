@@ -14,5 +14,5 @@ results
 npm-debug.log
 node_modules
 public/vendor
-public/css
+public/css/style.css
 

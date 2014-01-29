@@ -7,12 +7,6 @@ exports.authCallback = function(req, res) {
 	res.redirect('/home');
 };
 
-exports.login = function(req, res) {
-	res.render('users/auth', {
-		title: 'Login & Sign-up'
-	});
-};
-
 exports.logout = function(req, res) {
 	req.logout();
 	res.redirect('/');
