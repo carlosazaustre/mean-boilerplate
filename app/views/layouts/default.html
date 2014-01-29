@@ -21,7 +21,7 @@
         {% include '../includes/footer.html' %}
 
         <!-- Javascript -->
-        {% if env == 'development' %}
+        {% if process.env.NODE_ENV == 'development' %}
         <script src='//localhost:35729/livereload.js'></script>
         {% endif %}
 

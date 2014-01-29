@@ -21,6 +21,9 @@ module.exports = function(grunt) {
 			css: {
 				files: 'app/stylus/**/*.styl',
 				tasks: ['stylus'],
+			},
+			html: {
+				files: 'app/views/**/*.html'
 			}
 		},
 
