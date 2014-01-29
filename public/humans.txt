@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    Frontend: HTML5, CSS3/Stylus, Normalize.css, Modernizr, Angular
+    Backend: Node.js/Express
+    Database: MongoDB/Mongoose
+    Tools: Grunt, Bower
+    IDE: SublimeText2

@@ -1,0 +1,9 @@
+{
+	"name": "<%= _.slugify(appname) %>",
+	"version": "0.0.1",
+	"dependencies": {
+		"normalize.styl": "latest",
+		"angular": "latest",
+		"angular-route": "latest"
+	}
+}
