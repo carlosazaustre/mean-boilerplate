@@ -1,0 +1,35 @@
+'use strict';
+
+var url			= require('url'),
+	MONGO_URL	= (process.env.MONGOHQ_URL || 'mongodb://localhost:27017/mean-dev'),
+	REDISTOGO	= url.parse(process.env.REDISTOGO_URL || 'http://localhost:6379'),
+	REDISHOST	= REDISTOGO.hostname,
+	REDISPORT	= REDISTOGO.port,
+	REDISAUTH	= (process.env.REDISTOGO_URL ? REDISTOGO.auth.split(':')[1] : undefined);
+
+module.exports = {
+	port	: process.env.PORT || 3000,
+	db		: MONGO_URL,
+	app		: {
+		name: 'MEAN'
+	},
+	session: {
+		key		: ('SESSION_KEY' || process.env.SESSION_KEY),
+		secret	: ('SESSION_SECRET' || process.env.SESSION_SECRET),
+	},
+	sessionStore: {
+		host: REDISHOST,
+		port: REDISPORT,
+		auth: REDISAUTH
+	},
+	facebook: {
+		clientID	: ('APP_ID' || process.env.FACEBOOK_CLIENT_ID),
+		clientSecret: ('APP_SECRET' || process.env.FACEBOOK_CLIENT_SECRET),
+		callbackURL	: ('FB_CALLBACK' || process.env.FACEBOOK_CALLBACK)
+	},
+	twitter: {
+		clientID	: ('CLIENT_ID' || process.env.TWITTER_CLIENT_ID),
+		clientSecret: ('CLIENT_SECRET' || process.env.TWITTER_CLIENT_SECRET),
+		callbackURL	: ('TW_CALLBACK' || process.env.TWITTER_CALLBACK)
+	}
+};
