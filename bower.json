@@ -1,5 +1,5 @@
 {
-	"name": "<%= _.slugify(appname) %>",
+	"name": "MEAN_Boilerplate",
 	"version": "0.0.1",
 	"dependencies": {
 		"normalize.styl": "latest",

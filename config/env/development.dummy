@@ -12,23 +12,23 @@ module.exports = {
 	app		: {
 		name: 'MEAN - Development'
 	},
-	session: {
-		key		: 'mean.sid',
+	session : {
+		key		: 'SESSION_KEY',
 		secret	: 'SESSION_SECRET'
-	},
+	}
 	sessionStore: {
 		host: REDISHOST,
 		port: REDISPORT,
 		auth: REDISAUTH
 	},
 	facebook: {
-		clientID	: '270256826466905',
-		clientSecret: '44c8e9cce041ff954e5caaab5381b8de',
-		callbackURL	: 'http://localhost:3000/auth/facebook/callback'
+		clientID: 'APP_ID'
+		clientSecret: 'APP_SECRET',
+		callbackURL: 'http://localhost:3000/auth/facebook/callback'
 	},
 	twitter: {
-		clientID	: 'JAtko0DfHOsifSBQC8vBw',
-		clientSecret: '5n9KZZI1leyJkJVrjZptBdG82mpd3gs2UOOg89gdI',
-		callbackURL	: 'http://localhost:3000/auth/twitter/callback'
+		clientID: 'CLIENT_ID',
+		clientSecret: 'CLIENT_SECRET',
+		callbackURL: 'http://localhost:3000/auth/twitter/callback'
 	}
 };

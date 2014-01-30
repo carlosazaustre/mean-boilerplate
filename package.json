@@ -1,5 +1,5 @@
 {
-  "name": "<%= _.slugify(appname) %>",
+  "name": "MEAN_Boilerplate",
   "version": "0.0.1",
   "scripts": {
     "start": "node server.js",
@@ -29,6 +29,7 @@
     "grunt-contrib-stylus": "~0.12.0",
     "grunt-nodemon": "~0.2.0",
     "grunt-concurrent": "~0.4.3",
-    "time-grunt": "~0.2.8"
+    "time-grunt": "~0.2.8",
+    "nib": "~1.0.2"
   }
 }

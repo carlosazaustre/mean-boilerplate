@@ -8,16 +8,47 @@
 h1,h2,h3,h4,h5,h6
 	_resetSpaces()
 
-// Mobile-First styles
+// Mobile-First styles goes here
 body
 	background bg_color
 	color f_color
 	font-family 'Open Sans'
 	font-size 16px
 
+footer
+	font-size .8em
+	text-align center
+
 header
 	background bg_header
 	color f_header
+	padding 1em
+
+.intro
+	background bg_intro
+	margin 1em
+	padding 1em
+	text-align center
+	ul
+		_resetSpaces()
+		list-style-type none
+		li
+			_resetSpaces()
+			_alignment()
+	a.btn
+		background black
+		border-radius 5px
+		color f_header
+		padding .5em 1em
+		text-decoration none
+		&.btn-fb
+			background color_fb
+			border-bottom 3px solid color_fb - 40
+		&.btn-tw
+			background color_tw
+			border-bottom 3px solid color_tw - 40
+
+
 
 @import 'responsive-tablet'
 @import 'responsive-desktop'

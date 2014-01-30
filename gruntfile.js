@@ -23,11 +23,16 @@ module.exports = function(grunt) {
 				tasks: ['stylus'],
 			},
 			html: {
-				files: 'app/views/**/*.html'
+				files: 'app/views/**/*.html',
 			}
 		},
 
 		stylus: {
+			options: {
+				use: [
+					require('nib')
+				]
+			},
 			compile: {
 				options: {
 					paths: ['app/stylus/**/*.styl'],

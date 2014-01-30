@@ -3,10 +3,11 @@
 {% block content %}
 <section class='intro'>
 	<p>Hello world! This is MEAN Stack Boilerplate.</p>
+	<p>It included: <strong>Redis</strong> for session store and management, <strong>PassportJS</strong> for auth login and <strong>Stylus</strong> as CSS preproccessor.</p>
 	<p>Login with:</p>
 	<ul>
-		<li><a href="/auth/facebook"><span class="icon-facebook"></span>Facebook</a></li>
-		<li><a href="/auth/twitter"><span class="icon-twitter"></span>Twitter</a></li>
+		<li><a class="btn btn-fb" href="/auth/facebook"><span class="icon-facebook"></span> Facebook</a></li>
+		<li><a class="btn btn-tw" href="/auth/twitter"><span class="icon-twitter"></span> Twitter</a></li>
 	</ul>	
 </section>
 {% endblock %}
